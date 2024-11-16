@@ -1,0 +1,37 @@
+
+
+.activeBtn {
+    border-radius: 10px;
+    background: #1E3A8A;
+    padding: 6px 28px;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    transition: .1s linear;
+}
+
+.activeBtn:hover {
+    background: none;
+    /*border: 1px solid #1E3A8A;*/
+    border-inline: 2px solid #1E3A8A;
+}
+
+.customBtn {
+    padding: 6px 28px;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    transition: .2s linear;
+}
+
+.customBtn:hover {
+    background: rgba(30, 58, 138, 0.3);
+    border-radius: 10px;
+    transform: scale(1.1);
+}
+
+.openingTitle {
+    color: #1E3A8A;
+}
+
+.openingTitle > i {
+    color: #D9D9D9;
+}
