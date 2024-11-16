@@ -1,4 +1,3 @@
-import Image from "next/image";
 import ContainerHeader from "@/components/ContainerHeader";
 import ContainerPosts from "@/components/ContainerPosts";
 import ContainerFooter from "@/components/ContainerFooter";

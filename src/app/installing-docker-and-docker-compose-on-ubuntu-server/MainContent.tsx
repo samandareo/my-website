@@ -1,6 +1,4 @@
 "use client"
-import Image from "next/image";
-import backIcon from "@/images/visibility.svg"
 import {useRouter} from "next/navigation";
 export default function MainContent() {
     const router = useRouter();
