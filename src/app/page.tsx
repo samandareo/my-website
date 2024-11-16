@@ -10,7 +10,7 @@ export default function Home() {
         <div className="flex justify-center items-center w-100">
             <span
                 className={`font-bold text-5xl text-center animate-pulse transition hover:cursor-auto select-none hover:animate-none openingTitle`}>Welcome to <i
-                className="not-italic">SAMANDAREO</i>'s Space!
+                className="not-italic">SAMANDAREO</i>&apos;s Space!
             </span>
         </div>
         <ContainerPosts />
