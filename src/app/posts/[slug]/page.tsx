@@ -27,7 +27,7 @@ export default function PostPage() {
     useEffect(() => {
         const fetchPost = async () => {
             try {
-                const response = await fetch(`http://127.0.0.1:8000/api/posts/${slug}/`);
+                const response = await fetch(`https://pwb-xcls.onrender.com/api/posts/${slug}/`);
                 const data = await response.json();
                 setPost(data);
             } catch (error) {
@@ -37,7 +37,7 @@ export default function PostPage() {
 
         const incrementViews = async () => {
             try {
-                await fetch(`http://127.0.0.1:8000/api/posts/${slug}/increment-views/`, {
+                await fetch(`https://pwb-xcls.onrender.com/api/posts/${slug}/increment-views/`, {
                     method: "GET",
                 });
             } catch (error) {

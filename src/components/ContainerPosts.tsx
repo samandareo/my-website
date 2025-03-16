@@ -32,7 +32,7 @@ export default function ContainerPosts() {
     useEffect(() => {
         const fetchPosts = async () => {
             try {
-                const response = await fetch("http://127.0.0.1:8000/api/posts");
+                const response = await fetch("https://pwb-xcls.onrender.com/api/posts");
                 const data = await response.json();
                 setPosts(data);
             } catch (error) {
