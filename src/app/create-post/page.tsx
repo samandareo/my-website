@@ -5,9 +5,9 @@ import dynamic from "next/dynamic";
 import "react-mde/lib/styles/css/react-mde-all.css";
 import { refreshToken } from "@/utils/auth";
 import { useRouter } from "next/navigation";
+import Showdown from "showdown";
 
 const ReactMde = dynamic(() => import("react-mde"), { ssr: false});
-const Showdown = require("showdown");
 
 export default function CreatePostPage() {
     const [title, setTitle] = useState("");
@@ -35,7 +35,7 @@ export default function CreatePostPage() {
         };
 
         checkAuth();
-    }, []);
+    }, [router]);
 
     const converter = new Showdown.Converter();
 

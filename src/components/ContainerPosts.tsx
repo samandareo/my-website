@@ -5,6 +5,14 @@ import Image from "next/image";
 import {useRouter} from "next/navigation";
 import { useState, useEffect } from "react";
 
+interface Post {
+    id: number; // or number — based on your backend
+    title: string;
+    slug: string;
+    created_at: string; // or Date, if already converted
+    description: string;
+    views: number;
+}
 
 export default function ContainerPosts() {
 
@@ -50,7 +58,7 @@ export default function ContainerPosts() {
 
     return (
        <div className="flex flex-col gap-3 items-center">
-           {posts.map((item: any) => (
+           {posts.map((item: Post) => (
                <div key={item.id} className={`w-[90%] p-3 ${myStyle.borderStyle} flex flex-col gap-1 hover:cursor-pointer hover:scale-[1.03] transition`} onClick={() => {navigateToPost(item.slug)}}>
                    <div className="flex justify-between">
                        <span className="text-[17px]">{item.title}</span>
