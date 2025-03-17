@@ -33,8 +33,8 @@ export default function ContainerHeader() {
 
     return (
         <motion.header className={`flex flex-col gap-y-24 mt-2 sticky top-0 z-50 ${mystyle.bgBlur}`}
-            initial={{ opacity: 0, y: 0 }}
-            animate={{ opacity: 1, y: 30 }}
+            initial={{ opacity: 0, y: -30 }}
+            animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -30 }}
             transition={{ duration: 0.4 }}
         >
