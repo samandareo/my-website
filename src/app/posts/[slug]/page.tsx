@@ -86,7 +86,7 @@ export default function PostPage() {
     return (
         <div className="flex flex-col">
             <ContainerHeader />
-            <div className="container mx-auto py-4 px-6">
+            <div className="container mx-auto w-9/12 sm:w-[60%] md:w-[70%] lg:w-[50%] xl:w-[55%] mt-10">
 
                 <div className="justify-items-start mt-14 mb-4">
                     <span className="flex gap-x-2 hover:opacity-50 hover:cursor-pointer select-none" onClick={() => navigateToPosts()}>
@@ -122,7 +122,7 @@ export default function PostPage() {
                                 alt={alt || ""}
                                 width={800}
                                 height={400}
-                                className={`rounded-2xl mx-auto w-full md:w-1/2 border-2 border-[#1E3A8A] m-2`}
+                                className={`rounded-2xl mx-auto border-2 border-[#1E3A8A] m-2`}
                                 layout="responsive"
 
                             />

@@ -15,7 +15,7 @@ export default function ContainerHeader() {
     }
 
     return (
-        <header className="flex flex-col gap-y-24 mt-2">
+        <header className={`flex flex-col gap-y-24 mt-2 sticky top-0 z-50 ${mystyle.bgBlur}`}>
             <div className="container mx-auto h-115 flex justify-between items-center py-3 px-6">
                 <Image src={logo} alt="logo" width={60} height={60} className="hover:scale-110 hover:cursor-pointer transition"/>
                 <div>
