@@ -46,7 +46,7 @@ export default function CreatePostPage() {
     };
 
     const handleLogOut = async () => {
-        const response = await fetch("http://127.0.0.1:8000/api/token/logout", {
+        const response = await fetch("https://pwb-xcls.onrender.com/api/token/logout", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -78,7 +78,7 @@ export default function CreatePostPage() {
         });
 
         try {
-            const response = await fetch("http://127.0.0.1:8000/api/posts/", {
+            const response = await fetch("https://pwb-xcls.onrender.com/api/posts/", {
                 method: "POST",
                 headers: { 
                     "Authorization": `Bearer ${localStorage.getItem("access_token")}`,
