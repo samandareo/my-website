@@ -38,7 +38,7 @@ export default function ContainerHeader() {
             exit={{ opacity: 0, y: -30 }}
             transition={{ duration: 0.4 }}
         >
-            <div className="container mx-auto h-115 flex justify-between items-center py-3 px-6">
+            <div className="container mx-auto h-115 flex justify-between items-center py-3">
                 <Image src={logo} alt="logo" width={60} height={60} className="hover:scale-110 hover:cursor-pointer transition"/>
                 <div>
                     <ul className="flex gap-3 font-normal hover:cursor-pointer select-none">
