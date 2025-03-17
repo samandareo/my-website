@@ -4,6 +4,7 @@ import Image from "next/image";
 import profile_image from "@/images/profile_image.svg";
 import location_image from "@/images/location_logo.svg";
 import myStyle from "@/app/about/about.module.css";
+import Link from "next/link";
 
 
 export default function Home() {
@@ -28,7 +29,7 @@ export default function Home() {
 
                 <div className="flex flex-col border-2 border-[#1E3A8A] rounded-2xl p-5 bg-[rgba(30,58,138,0.2)] gap-y-6">
                     <span className="flex flex-col">
-                        <h2 className="text-4xl font-bold">SAMANDAR ABDUG'AFFOROV</h2>
+                        <h2 className="text-4xl font-bold">SAMANDAR ABDUG&apos;AFFOROV</h2>
                         <h4 className="text-2xl font-extralight">Software Engineer | Full Stack</h4>
                     </span>
                     <span>
@@ -46,24 +47,29 @@ export default function Home() {
                 </div>
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
-                <a href="https://github.com/samandareo" className={myStyle.socialItem}>
+                <Link href="https://github.com/samandareo" className={myStyle.socialItem} target="_blank" rel="noopener noreferrer">
                     Github
-                </a>
-                <a href="https://www.linkedin.com/in/samandareo/" className={myStyle.socialItem}>
+                </Link>
+
+                <Link href="https://www.linkedin.com/in/samandareo/" className={myStyle.socialItem} target="_blank" rel="noopener noreferrer">
                     Linkedin
-                </a>
-                <a href="https://x.com/samandareo" className={myStyle.socialItem}>
+                </Link>
+
+                <Link href="https://x.com/samandareo" className={myStyle.socialItem} target="_blank" rel="noopener noreferrer">
                     ex-Twitter
-                </a>
-                <a href="https://t.me/samandareo7" className={myStyle.socialItem}>
+                </Link>
+
+                <Link href="https://t.me/samandareo7" className={myStyle.socialItem} target="_blank" rel="noopener noreferrer">
                     Telegram <span className="text-xs font-light">[life]</span>
-                </a>
-                <a href="https://t.me/samandareotech" className={`${myStyle.socialItem} md:col-start-2 lg:col-start-auto`}>
-                    Telegram <span className="text-xs font-light ">[work]</span>
-                </a>
-                <a href="https://www.youtube.com/@abdugafforovs" className={`${myStyle.socialItem}`}>
+                </Link>
+
+                <Link href="https://t.me/samandareotech" className={`${myStyle.socialItem} md:col-start-2 lg:col-start-auto`} target="_blank" rel="noopener noreferrer">
+                    Telegram <span className="text-xs font-light">[work]</span>
+                </Link>
+
+                <Link href="https://www.youtube.com/@abdugafforovs" className={myStyle.socialItem} target="_blank" rel="noopener noreferrer">
                     Youtube
-                </a>
+                </Link>
             </div>
         </div>
         <ContainerFooter />
