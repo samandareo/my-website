@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { AnimatePresence } from "framer-motion";
 import localFont from "next/font/local";
 import "./globals.css";
 
@@ -70,7 +71,9 @@ export default function RootLayout({
         ${poppinsBold.variable} 
         antialiased`}
       >
-        {children}
+        <AnimatePresence mode="wait">
+          {children}
+        </AnimatePresence>
       </body>
     </html>
   );
