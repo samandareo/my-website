@@ -4,7 +4,7 @@ import ContainerPosts from "@/components/ContainerPosts";
 import ContainerFooter from "@/components/ContainerFooter";
 import "./globals.css"
 import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
+import { use, useEffect, useState } from "react";
 
 export default function Home() {
 
@@ -24,12 +24,13 @@ export default function Home() {
 
     fetchPosts();
 
-    const timer = setTimeout(() => {
-      setIsLoading(false)
-    }, 1000);
-
-    return () => clearTimeout(timer);
   }, [])
+
+  useEffect(() => {
+    if (posts.length > 0) {
+      setIsLoading(false)
+    }
+  }, [posts])
 
   if (isLoading) {
     return (

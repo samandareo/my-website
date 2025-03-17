@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { useParams } from "next/navigation";
 import ContainerFooter from "@/components/ContainerFooter";
 import ContainerHeader from "@/components/ContainerHeader";
+import myStyle from "@/app/posts/[slug]/postPage.module.css";
 import { useRouter } from "next/navigation";
 import arrow_back from "@/images/arrow_back.svg";
 import Image from "next/image"
@@ -51,7 +52,7 @@ export default function PostPage() {
         }
     }, [slug]);
 
-    if (!post) return <p className="mx-auto">Loading ...</p>
+    if (!post) return <p className={`mx-auto ${myStyle.loadingText}`}>Loading ...</p>
 
     const navigateToPosts = () => {
         router.push("/");

@@ -33,13 +33,7 @@ export default function ContainerHeader() {
 
 
     return (
-        <motion.div
-            key="header"
-            initial={{ opacity: 0, y: 0 }}
-            animate={{ opacity: 1, y: 30 }}
-            exit={{ opacity: 0, y: -30 }}
-            transition={{ duration: 0.4 }}
-        >
+
         <header className={`flex flex-col gap-y-24 mt-2 sticky top-0 z-50 ${mystyle.bgBlur}`}>
             <div className="container mx-auto h-115 flex justify-between items-center py-3 px-6">
                 <Image src={logo} alt="logo" width={60} height={60} className="hover:scale-110 hover:cursor-pointer transition"/>
@@ -53,6 +47,5 @@ export default function ContainerHeader() {
                 <Image src={chat} alt="chat" width={30} height={30} className="hover:scale-110 hover:cursor-pointer transition"/>
             </div>
         </header>
-        </motion.div>
     );
 }
