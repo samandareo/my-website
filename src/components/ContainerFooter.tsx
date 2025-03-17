@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function ContainerFooter() {
   return (
@@ -12,7 +13,7 @@ export default function ContainerFooter() {
         transition={{ duration: 0.4 }}
       >
         <span className="font-extralight text-sm text-center block">
-          © 2025 <a href="/" className="underline">samandareo.live</a>
+          © 2025 <Link href="/" target="_blank" rel="noopener noreferrer">samandareo.live</Link>
         </span>
       </motion.div>
     </div>
