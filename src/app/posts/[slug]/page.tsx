@@ -127,6 +127,7 @@ export default function PostPage() {
 
                             />
                         ),
+                        strong: ({ children }) => <strong className={`text-[#2d56c7]`}>{children}</strong>,
                         
                     }}
                 >
