@@ -4,7 +4,7 @@ import ContainerPosts from "@/components/ContainerPosts";
 import ContainerFooter from "@/components/ContainerFooter";
 import "./globals.css"
 import { motion } from "framer-motion";
-import { use, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Home() {
 

@@ -2,10 +2,8 @@
 import Image from "next/image";
 import logo from "@/images/logo.png"
 import chat from "@/images/chat.svg"
-import {useState} from "react";
 import mystyle from "@/components/header.module.css"
 import { usePathname, useRouter } from "next/navigation";
-import { motion } from "framer-motion";
 
 export default function ContainerHeader() {
     // Variables
